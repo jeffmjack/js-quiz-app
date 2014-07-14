@@ -1,0 +1,10 @@
+* {
+    outline: 1px solid red;
+}
+
+#wrapper {
+    max-width: 1040px;
+    margin: auto;
+    background-image: url("./assets/Austin\ background.jpg")
+    overflow: display;
+}
