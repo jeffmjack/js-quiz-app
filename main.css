@@ -5,10 +5,19 @@
 *, *:before, *:after {
       -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
+
 @font-face {
-    font-family: "duo-lineregular";
-    src: url('Users/jeffmjack/code/thinkful/js-quiz-app/css/type/duoline-webfont.eot');
+    font-family: 'duo-lineregular';
+    src: url('duoline-webfont.eot');
+    src: url('duoline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('duoline-webfont.woff') format('woff'),
+         url('duoline-webfont.ttf') format('truetype'),
+         url('duoline-webfont.svg#duo-lineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
  span {
     font-family: 'duo-lineregular', 'sans-serif'; 
  }
