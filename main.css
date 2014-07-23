@@ -1,10 +1,90 @@
 * {
     outline: 1px solid red;
 }
-
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+      -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+@font-face {
+    font-family: "duo-lineregular";
+    src: url('Users/jeffmjack/code/thinkful/js-quiz-app/css/type/duoline-webfont.eot');
+}
+ span {
+    font-family: 'duo-lineregular', 'sans-serif'; 
+ }
+ h1 {
+    color: #ff9900;
+ }
+ #tagline {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    z-index: 2;
+ }
 #wrapper {
     max-width: 1040px;
+    min-height: 650px;
     margin: auto;
-    background-image: url("./assets/Austin\ background.jpg")
-    overflow: display;
+    background-image: url("./assets/Austin\ background.jpg");
+    background-size: 100%;
+    position: relative;
 }
+#banner {
+   position: absolute;
+   background-color: #2B78E4;
+   width: 939px;
+   min-height: 167px;
+   opacity: 0.75;
+   border-radius: 15px;
+   right: 5px;
+   top: 50px;
+
+}
+
+#start-box{
+    position: absolute;
+   background-color: #00FFFF;
+   width: 312px;
+   min-height: 227px;
+   opacity: 0.75;
+   border-radius: 15px;
+   top: 241px;
+   right: 123px;
+   padding: 25px;
+}
+
+#start-button {
+    position: absolute;
+    opacity: 1;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    background-color: #ff9900;
+    top: 411px;
+    right: 189px;
+}
+
+#question {
+   position: absolute;
+   background-color: #FFFFFF;
+   width: 379px;
+   min-height: 109px;
+   opacity: 0.75;
+   border-radius: 15px;
+   top: 275px;
+   display: none;
+}
+
+#answers {
+    position: absolute;
+   background-color: #00FFFF;
+   width: 453px;
+   min-height: 222px;
+   opacity: 0.75;
+   border-radius: 15px;
+   top: 380px;
+   right: 0px;
+   display: none;
+}
+
