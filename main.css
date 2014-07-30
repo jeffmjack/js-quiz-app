@@ -20,16 +20,23 @@
 
  span {
     font-family: 'duo-lineregular', 'sans-serif'; 
+    font-size: 2em;
  }
  h1 {
     color: #ff9900;
+    font-size: 2.5em;
  }
  #tagline {
     position: absolute;
-    top: 60px;
-    left: 200px;
+    top: 40px;
+    left: 131px;
     z-index: 2;
  }
+#tagline h2 {
+    margin-top: -26px;
+    margin-left: 40px;
+    color: white;
+}
 #wrapper {
     max-width: 1040px;
     min-height: 650px;
@@ -74,6 +81,12 @@
     right: 189px;
 }
 
+#start-button-text {
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
 #question {
    position: absolute;
    background-color: #FFFFFF;
