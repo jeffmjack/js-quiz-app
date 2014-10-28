@@ -1,0 +1,16 @@
+var question1 = 'how do you feel about "live music"?<br>' + 
+' <form action="/Users/jeffmjack/code/thinkful/js-quiz-app/question2.html" method="get">' +
+'     <input type="radio" name="A1" value="10">' +
+'     AMMMMAAAAAAAZZZZZZZZIIINNGGGGGG (I’m from Beaumont)' +
+'     <br>' +
+'     <input type="radio" name="A1" value="3">' +
+'     it’s loud and I don’t like standing still for that long' +
+'     <br>' +
+'     <input type="radio" name="A1" value="2">' +
+'     I went to an Eagles concert when I was 11, does that count?' +
+'     <br>' +
+'     <input type="radio" name="A1" value="5">' +
+'     shows are okay but I’d rather be quietly reading' +
+'     <br>' +
+'     <input type="submit">' +
+' </form>';
