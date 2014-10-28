@@ -21,19 +21,17 @@ $(document).ready(function () {
         
     });
     // record value of answer when user clicks submit for question
-    var getRadio= function () {
-        $('form').on('submit', function () {
-            event.preventDefault();
-            var thisScore = $("input[name=radio]:checked").val();
-            thisScore = parseInt (thisScore);
-            userScore = thisScore;
-            questionNumber++;
-            alert ("User's score for this question: " + thisScore + "\n User's total score: " + userScore);
-            return thisScore; 
-        });
-    };
-    userScore = userScore + getRadio();
+
+    $('form').on('submit', function (event) {
+        event.preventDefault();
+        var thisScore = $("input[type=radio]:checked").val();
+        thisScore = parseInt (thisScore);
+        userScore += thisScore;
+        var questionNumber = $('input').prop('name');
+        alert ("User's score for this question: " + thisScore + "\n User's total score: " + userScore + "\nand the input name was: " + questionNumber);
+    });
+});
     // show new question and increment questionNumber
-    questionNumber ++;
     
-}); 
+ 
+
