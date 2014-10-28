@@ -80,7 +80,9 @@
     top: 411px;
     right: 189px;
 }
-
+#start-button:hover {
+    cursor: pointer;
+}
 #start-button-text {
     position: relative;
     top: 50%;
@@ -96,6 +98,13 @@
    border-radius: 15px;
    top: 275px;
    display: none;
+}
+
+#question1, 
+#question2, 
+#question3, 
+#question4  {
+    display: none;
 }
 
 #answers {
