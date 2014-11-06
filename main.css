@@ -97,6 +97,7 @@
 }
 #question {
    position: absolute;
+   opacity: 1;
    width: 379px;
    min-height: 109px;
    top: 275px;
@@ -107,19 +108,25 @@
 #question1, 
 #question2, 
 #question3, 
-#question4  {
+#question4,
+#lowAnswer,
+#mediumLowAnswer,
+#mediumHighAnswer,
+#highAnswer
+{
     display: none;
 }
 
 #answers {
-    position: absolute;
-   background-color: #00FFFF;
-   width: 453px;
-   min-height: 222px;
-   opacity: 0.75;
-   border-radius: 15px;
-   top: 380px;
-   right: 0px;
-   display: none;
+   position           :absolute;
+   background-color   :#00FFFF;
+   width              :453px;
+   min-height         :222px;
+   opacity            :0.75;
+   border-radius      :15px;
+   top                :380px;
+   right              :0px;
+   display            :none;
 }
+
 
