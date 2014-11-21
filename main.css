@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red;
+
 }
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -17,30 +17,43 @@
     font-style: normal;
 
 }
-
- span {
+* {
+  font-family:  arial;
+}
+#austin {
     font-family: 'duo-lineregular', 'sans-serif'; 
-    font-size: 2em;
- }
+    font-size: 83px;
+}
+
+span {
+    font-size: 21px;
+}
 
  .questionHeader {
-    font-size: 1.25em;
- }
- h1 {
+    font-size: 21px;
+}
+
+h1 {
     color: #ff9900;
-    font-size: 2.5em;
- }
- #tagline {
+    font-size: 37px;
+    font-weight: normal;
+}
+
+#tagline {
     position: absolute;
     top: 40px;
     left: 131px;
-    z-index: 2;
- }
+    z-index: 2;;
+    font-weight: normal;
+}
+
 #tagline h2 {
     margin-top: -26px;
     margin-left: 40px;
     color: white;
+    font-weight: normal; 
 }
+
 #wrapper {
     max-width: 1040px;
     min-height: 650px;
@@ -49,6 +62,7 @@
     background-size: 100%;
     position: relative;
 }
+
 #banner {
    position: absolute;
    background-color: #2B78E4;
@@ -58,43 +72,49 @@
    border-radius: 15px;
    right: 5px;
    top: 50px;
-
 }
 
-#start-box{
-    position: absolute;
+#start-box {
+   position: absolute;
    width: 312px;
    top: 241px;
    right: 123px;
+   padding-bottom: 80px;
 }
+
 .textBox {
    min-height: 227px;
    border-radius: 15px;
    padding: 25px;
    opacity: 0.75;
    background-color: #00FFFF;
-  }
+}
 
 #start-button {
     position: absolute;
-    opacity: 1;
-    border-radius: 10px;
     text-align: center;
     width: 180px;
     height: 40px;
-    background-color: #ff9900;
-    top: 411px;
-    right: 189px;
+    top: 409px;
+    right: 192px;
 }
+
+.orangeButton{
+    background-color: #ff9900;
+    border-radius: 10px;
+}
+
 #start-button:hover {
     cursor: pointer;
 }
+
 #start-button-text {
     position: relative;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
 }
+
 #question {
    position: absolute;
    opacity: 1;
@@ -103,6 +123,27 @@
    top: 275px;
    left: 18px;
    display: none;
+}
+
+.radioQuestion {
+  float: left;
+  width: 80%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+}
+
+#question input[type='radio']{
+  float: left;
+}
+
+input[type="submit"]{
+    background-color: #ff9900;
+    border-radius: 10px;
+    width: 75px;
+    height: 40px;
+    border: none;
+    display: block;
+    margin: 0px auto;
 }
 
 #question1, 

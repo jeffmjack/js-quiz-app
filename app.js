@@ -10,6 +10,7 @@ function nextQuestion(){
 
 */
 $(document).ready(function () {
+  var userScore = 0;
 
    // clear modal instructions and show question 1 when user clicks on 'let's get started'
     $('#start-button').on('click', function(){
@@ -24,8 +25,15 @@ $(document).ready(function () {
     $('form').on('submit', function (event) {
         event.preventDefault();
         var thisScore = +$(this).find("input[type=radio]:checked").val();
+
+        if (isNaN(thisScore)){
+          alert("Choose an option before you click submit!");
+          return;
+        }
+
         userScore += thisScore;
         questionNumber = $(this).prop('name');
+
         alert ("User's score for this question: " + thisScore + "\n User's total score: " + userScore + "\nand the input name was: " + questionNumber);
         questionSwitcher (questionNumber);
     });
