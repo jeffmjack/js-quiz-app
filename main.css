@@ -20,13 +20,16 @@
 * {
   font-family:  arial;
 }
-#austin {
-    font-family: 'duo-lineregular', 'sans-serif'; 
-    font-size: 83px;
-}
 
 span {
     font-size: 21px;
+    font-weight: bold;
+}
+
+#austin {
+    font-family: 'duo-lineregular', 'sans-serif'; 
+    font-size: 83px;
+    font-weight: normal;
 }
 
  .questionHeader {
@@ -35,6 +38,7 @@ span {
 p {
   line-height: 140%;
   font-size: 18px;
+  margin-top: 5px;
 }
 h1 {
     color: #ff9900;
@@ -165,12 +169,11 @@ input[type="submit"]{
 #answers {
    position           :absolute;
    background-color   :#00FFFF;
-   width              :453px;
+   width              :424px;
    min-height         :222px;
    border-radius      :15px;
-   top                :380px;
-   right              :0px;
-   display            :none;
+   top                :232px;
+   right              :20px;
 }
 
 

@@ -11,7 +11,6 @@ function nextQuestion(){
 */
 $(document).ready(function () {
   var userScore = 0;
-
    // clear modal instructions and show question 1 when user clicks on 'let's get started'
     $('#start-button').on('click', function(){
         $('#start-box').hide();
@@ -34,12 +33,12 @@ $(document).ready(function () {
         userScore += thisScore;
         questionNumber = $(this).prop('name');
 
-        //alert ("User's score for this question: " + thisScore + "\n User's total score: " + userScore + "\nand the input name was: " + questionNumber);
-        questionSwitcher (questionNumber);
+        alert ("User's score for this question: " + thisScore + "\n User's total score: " + userScore + "\nand the input name was: " + questionNumber);
+        questionSwitcher (questionNumber, userScore);
     });
 });
 
-function questionSwitcher (question) {
+function questionSwitcher (question, score) {
   switch (question) {
     case "A1":
       $("#question1").hide();
@@ -56,26 +55,26 @@ function questionSwitcher (question) {
     case "A4":
       $("#question").hide();
       $("#answers").show();
-      answerSwitch(userScore);
+      answerSwitch(score);
       break;
     default:
       alert("y'all the questionSwitch is broken");
       break;
   }
 }
-function answerSwitch (score){
 
+function answerSwitch (score){
   switch (true) {
     case (score<=10) :
       $("#lowAnswer").show();
       break;
-    case (11<=score<20) :
+    case (11<=score && score<20) :
       $("#mediumLowAnswer").show();
       break;
-    case (21<=score<30) :
+    case (21<=score && score<30) :
       $("#mediumHighAnswer").show();
       break;
-    case (31<=score<40) :
+    case (31<=score && score<40) :
       $("#highAnswer").show();
       break;
     default:
