@@ -56,27 +56,30 @@ function questionSwitcher (question) {
     case "A4":
       $("#question").hide();
       $("#answers").show();
-      $("#mediumLowAnswer").show();
-      switch (true) {
-        case (userScore<=10) :
-          $("#lowAnswer").show();
-          break;
-        case (11<=userScore<20) :
-          $("#mediumLowAnswer").show();
-          break;
-        case (21<=userScore<30) :
-          $("#mediumHighAnswer").show();
-          break;
-        case (31<=userScore<40) :
-          $("#highAnswer").show();
-          break;
-        default:
-          alert("y'all the answerSwitch is broken");
-          break;
-        }
+      answerSwitch(userScore);
       break;
     default:
       alert("y'all the questionSwitch is broken");
+      break;
+  }
+}
+function answerSwitch (score){
+
+  switch (true) {
+    case (score<=10) :
+      $("#lowAnswer").show();
+      break;
+    case (11<=score<20) :
+      $("#mediumLowAnswer").show();
+      break;
+    case (21<=score<30) :
+      $("#mediumHighAnswer").show();
+      break;
+    case (31<=score<40) :
+      $("#highAnswer").show();
+      break;
+    default:
+      alert("y'all the answerSwitch is broken");
       break;
   }
 }

@@ -32,7 +32,10 @@ span {
  .questionHeader {
     font-size: 21px;
 }
-
+p {
+  line-height: 140%;
+  font-size: 18px;
+}
 h1 {
     color: #ff9900;
     font-size: 37px;
@@ -86,7 +89,7 @@ h1 {
    min-height: 227px;
    border-radius: 15px;
    padding: 25px;
-   opacity: 0.75;
+   opacity: 1;
    background-color: #00FFFF;
 }
 
@@ -150,6 +153,7 @@ input[type="submit"]{
 #question2, 
 #question3, 
 #question4,
+#answers,
 #lowAnswer,
 #mediumLowAnswer,
 #mediumHighAnswer,
@@ -163,7 +167,6 @@ input[type="submit"]{
    background-color   :#00FFFF;
    width              :453px;
    min-height         :222px;
-   opacity            :0.75;
    border-radius      :15px;
    top                :380px;
    right              :0px;
