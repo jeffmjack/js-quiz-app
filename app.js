@@ -33,7 +33,7 @@ $(document).ready(function () {
         userScore += thisScore;
         questionNumber = $(this).prop('name');
 
-        alert ("User's score for this question: " + thisScore + "\n User's total score: " + userScore + "\nand the input name was: " + questionNumber);
+        console.log("User's score for this question: " + thisScore + "\n User's total score: " + userScore + "\nand the input name was: " + questionNumber);
         questionSwitcher (questionNumber, userScore);
     });
 });

@@ -20,6 +20,9 @@
 * {
   font-family:  arial;
 }
+body {
+  background: black;
+}
 
 span {
     font-size: 21px;
@@ -77,7 +80,7 @@ h1 {
    min-height: 167px;
    opacity: 0.75;
    border-radius: 15px;
-   right: 5px;
+   right: 50px;
    top: 50px;
 }
 
